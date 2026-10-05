@@ -1,0 +1,16 @@
+[
+  {"file": "clinic-maps.jpg", "caption": "Clinic · Dundas St E", "alt": "Artisan Dental Waterdown clinic"},
+  {"file": "Waterdown-Dentist.jpg", "caption": "Care in Waterdown", "alt": "Waterdown dentist"},
+  {"file": "Dental-Cleaning.jpg", "caption": "Routine cleaning", "alt": "Dental cleaning"},
+  {"file": "Teeth-Whitening.webp", "caption": "Teeth whitening", "alt": "Teeth whitening"},
+  {"file": "Invisalign-Crystallina.jpg", "caption": "Invisalign", "alt": "Invisalign clear aligners"},
+  {"file": "Veneers.webp", "caption": "Veneers", "alt": "Dental veneers"},
+  {"file": "Dental-Implants.jpg", "caption": "Implants", "alt": "Dental implants"},
+  {"file": "Dental-Crown-Bridge.jpg", "caption": "Crown & bridge", "alt": "Crown and bridge"},
+  {"file": "Dental-Fillings.jpg", "caption": "Fillings", "alt": "Dental fillings"},
+  {"file": "Root-Canal-Therapy.jpg", "caption": "Root canal", "alt": "Root canal therapy"},
+  {"file": "Tooth-Extractions.jpg", "caption": "Extractions", "alt": "Tooth extractions"},
+  {"file": "Dentures.webp", "caption": "Dentures", "alt": "Dentures"},
+  {"file": "Nightguards.jpg", "caption": "Night guards", "alt": "Night guards"},
+  {"file": "Sports-Guards-1.jpg", "caption": "Sports guards", "alt": "Sports mouth guards"}
+]

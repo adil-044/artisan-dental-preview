@@ -3,22 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Book an Appointment | Artisan Dental Waterdown</title>
-  <meta name="description" content="Book your visit at Artisan Dental in Waterdown. Request a time online or call (905) 689-6222. We bill insurance directly." />
+  <title>AI Booking | Artisan Dental Waterdown</title>
+  <meta name="description" content="Book Artisan Dental Waterdown with the AI concierge. Demo locks real availability slots instantly." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;650;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <a class="skip" href="#book">Skip to booking form</a>
+  <a class="skip" href="#book">Skip to AI booking</a>
+  <div class="demo-banner"><strong>DEMO</strong> — AI booking landing · slots persist in browser · cancel anytime</div>
 
   <header class="site-header">
     <div class="nav-inner">
       <a class="nav-brand" href="index.html">Artisan Dental</a>
       <ul class="nav-links">
-        <li class="hide-sm"><a href="index.html#care">Care</a></li>
-        <li><a class="nav-cta" href="#book">Book now</a></li>
+        <li class="hide-sm"><a href="index.html#gallery">Gallery</a></li>
+        <li><a class="nav-cta" href="#book">AI Book</a></li>
       </ul>
     </div>
   </header>
@@ -26,21 +27,15 @@
   <main>
     <section class="page-hero" aria-label="Book">
       <div class="hero-media" aria-hidden="true">
-        <img
-          src="images/hero-clinic.jpg"
-          alt=""
-          width="2400"
-          height="1600"
-          fetchpriority="high"
-        />
+        <img src="images/gallery/Waterdown-Dentist.jpg" alt="" width="1200" height="800" fetchpriority="high" />
       </div>
       <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-content">
         <p class="hero-brand">Artisan Dental</p>
-        <h1 class="hero-line">Book your Waterdown visit.</h1>
-        <p class="hero-support">Request a time below — we confirm by phone or email.</p>
+        <h1 class="hero-line">AI booking for Waterdown.</h1>
+        <p class="hero-support">Tell the assistant what you need. It holds the chair time.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#book">Request a time</a>
+          <a class="btn btn-ai" href="#book">Start AI booking</a>
           <a class="btn btn-ghost" href="tel:+19056896222">Call (905) 689-6222</a>
         </div>
       </div>
@@ -48,92 +43,50 @@
 
     <section class="section booking" id="book">
       <div class="section-inner booking-layout">
-        <aside class="booking-aside reveal">
-          <h2>Same promise, clearer path</h2>
-          <p>No duplicate homepage maze. One form, one phone number, one clinic address.</p>
+        <aside class="booking-aside">
+          <div class="ai-pill"><span class="dot" aria-hidden="true"></span> Live demo availability</div>
+          <h2>Same AI. Full booking page.</h2>
+          <p>Hours match Google Maps. Double-book blocked. Confirmation ID + .ics calendar download.</p>
           <ul class="booking-meta">
             <li>
               <strong>Address</strong>
-              <span>245 Dundas St E, Unit 6<br />Waterdown, ON L8B 0W2</span>
+              <span>245 Dundas St E, Unit 6<br />Waterdown, ON L8B 0E9</span>
             </li>
             <li>
               <strong>Hours</strong>
-              <span>Monday–Thursday · Friday by appointment</span>
+              <span>Mon–Fri (see AI for open times)<br />Sat–Sun closed</span>
             </li>
             <li>
               <strong>Call</strong>
-              <a class="booking-call" href="tel:+19056896222">(905) 689-6222</a>
+              <a href="tel:+19056896222">(905) 689-6222</a>
             </li>
             <li>
               <strong>Email</strong>
               <a href="mailto:info@artisandental.ca">info@artisandental.ca</a>
             </li>
           </ul>
-          <p style="margin: 0; font-size: 0.92rem; color: var(--ink-soft);">
-            New patients, cleanings, pain visits, cosmetic consults, and implant questions all start here.
-          </p>
+          <div class="bookings-panel">
+            <h4>Confirmed on this device</h4>
+            <div data-bookings-list></div>
+          </div>
         </aside>
 
-        <form class="book-form reveal" id="book-form" novalidate>
-          <h3>Booking request</h3>
-          <p class="form-lead">We answer to lock your slot. Insurance billed direct when coverage allows.</p>
-          <div class="form-grid two">
-            <div class="field">
-              <label for="name">Full name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required />
-            </div>
-            <div class="field">
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+        <div class="ai-shell" id="ai-booking" data-ai-root>
+          <div class="ai-top">
+            <div class="ai-avatar" aria-hidden="true">AI</div>
+            <div>
+              <h3>Artisan AI Concierge</h3>
+              <p>Natural language · chip shortcuts · instant lock</p>
             </div>
           </div>
-          <div class="form-grid" style="margin-top: 1rem;">
-            <div class="field">
-              <label for="email">Email <span class="hint">(optional)</span></label>
-              <input id="email" name="email" type="email" autocomplete="email" />
-            </div>
-          </div>
-          <div class="form-grid two" style="margin-top: 1rem;">
-            <div class="field">
-              <label for="service">Reason for visit</label>
-              <select id="service" name="service" required>
-                <option value="">Select…</option>
-                <option>New patient exam</option>
-                <option>Cleaning / checkup</option>
-                <option>Tooth pain / emergency</option>
-                <option>Cosmetic consult</option>
-                <option>Implants / restorative</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="when">Preferred day / time</label>
-              <input id="when" name="when" type="text" placeholder="e.g. Thu after 3pm" />
-            </div>
-          </div>
-          <div class="form-grid" style="margin-top: 1rem;">
-            <div class="field">
-              <label for="patient">Patient type</label>
-              <select id="patient" name="patient">
-                <option value="">Select…</option>
-                <option>New patient</option>
-                <option>Returning patient</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-grid" style="margin-top: 1rem;">
-            <div class="field">
-              <label for="notes">Notes for the team</label>
-              <textarea id="notes" name="notes" rows="4"></textarea>
-            </div>
-          </div>
-          <p class="form-note">Opens your email to info@artisandental.ca. Confirmed only after we reply.</p>
-          <div class="form-actions">
-            <button class="btn btn-accent btn-block" type="submit">Send booking request</button>
-            <a class="btn btn-block" style="background: transparent; border: 1.5px solid var(--line); color: var(--ink);" href="tel:+19056896222">Or call the clinic</a>
-          </div>
-          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
+          <div class="ai-log" data-ai-log role="log" aria-live="polite"></div>
+          <form class="ai-compose" data-ai-form>
+            <label class="skip" for="ai-input">Message</label>
+            <input id="ai-input" data-ai-input type="text" placeholder="Tooth pain tomorrow afternoon…" autocomplete="off" />
+            <button type="submit" data-ai-send>Send</button>
+          </form>
+          <p class="ai-footer-note">Try: “cleaning Thursday” → pick time → name → phone</p>
+        </div>
       </div>
     </section>
   </main>
@@ -144,15 +97,23 @@
         <p class="footer-brand">Artisan Dental</p>
         <p>245 Dundas St E, Unit 6 · Waterdown, ON<br />info@artisandental.ca · (905) 689-6222</p>
       </div>
-      <nav class="footer-links" aria-label="Footer">
+      <nav class="footer-links">
         <a href="index.html">Home</a>
-        <a href="#book">Book</a>
+        <a href="#book">AI Book</a>
         <a href="tel:+19056896222">Call</a>
       </nav>
     </div>
   </footer>
 
-  <script src="js/book.js"></script>
-  <script src="js/reveal.js"></script>
+  <a class="ai-fab" href="#book">✦ <span>AI Book</span></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+  <script src="js/ai-booking.js"></script>
+  <script src="js/motion.js"></script>
+  <script>
+    ArtisanAIBooking.mount(document.querySelector("[data-ai-root]"));
+  </script>
 </body>
 </html>
