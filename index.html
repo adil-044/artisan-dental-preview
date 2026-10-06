@@ -3,124 +3,255 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Artisan Dental | AI Booking Demo — Waterdown</title>
-  <meta name="description" content="Demo: Artisan Dental Waterdown homepage with AI booking assistant and clinic gallery. Book real demo slots instantly." />
+  <title>Artisan Dental Waterdown | Family Dentist · AI Booking</title>
+  <meta name="description" content="Artisan Dental in Waterdown — family, cosmetic & implant dentistry at 245 Dundas St E Unit 6. Book with AI. Call (905) 689-6222. Direct insurance billing. CDCP welcome." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://artisandental.ca/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Artisan Dental | Waterdown Family Dentistry" />
+  <meta property="og:description" content="Calm family dentistry in Waterdown. Book online with Artisan AI or call (905) 689-6222." />
+  <meta property="og:url" content="https://artisandental.ca/" />
+  <meta property="og:locale" content="en_CA" />
+  <meta name="geo.region" content="CA-ON" />
+  <meta name="geo.placename" content="Waterdown" />
+  <meta name="theme-color" content="#1a3a44" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Artisan Dental",
+    "url": "https://artisandental.ca/",
+    "telephone": "+1-905-689-6222",
+    "email": "info@artisandental.ca",
+    "image": "https://artisandental.ca/wp-content/uploads/2022/11/Waterdown-Dentist.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "245 Dundas St E, Unit 6",
+      "addressLocality": "Waterdown",
+      "addressRegion": "ON",
+      "postalCode": "L8B 0E9",
+      "addressCountry": "CA"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 43.3295724, "longitude": -79.8985201 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "09:30", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "09:30", "closes": "16:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:30", "closes": "13:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:30", "closes": "13:30" }
+    ],
+    "priceRange": "$$",
+    "areaServed": ["Waterdown", "Hamilton", "Flamborough"]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <a class="skip" href="#book">Skip to AI booking</a>
-  <div class="demo-banner"><strong>DEMO</strong> — AI booking locks real slots in your browser. Not live clinic PMS yet.</div>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="demo-banner"><strong>LIVE DEMO</strong> — AI booking via OpenRouter free models · left chat · scroll effects from Uptisement packs</div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-  <header class="site-header">
+  <header class="site-header" data-nav>
     <div class="nav-inner">
       <a class="nav-brand" href="index.html">Artisan Dental</a>
       <ul class="nav-links">
+        <li class="hide-sm"><a href="#explore">Explore</a></li>
+        <li class="hide-sm"><a href="#services">Services</a></li>
         <li class="hide-sm"><a href="#gallery">Gallery</a></li>
-        <li class="hide-sm"><a href="#care">Care</a></li>
-        <li><a class="nav-cta" href="#book">AI Book</a></li>
+        <li><button type="button" class="nav-cta" data-open-ai>Book with AI</button></li>
       </ul>
     </div>
   </header>
 
-  <main>
-    <section class="hero" aria-label="Welcome">
+  <main id="main">
+    <section class="hero" data-hero aria-label="Welcome">
       <div class="hero-media" aria-hidden="true">
         <img src="images/gallery/clinic-maps.jpg" alt="" width="1200" height="900" fetchpriority="high" />
       </div>
       <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-content">
-        <p class="hero-brand">Artisan Dental</p>
-        <h1 class="hero-line">Waterdown family dentistry without the wait-and-wonder.</h1>
-        <p class="hero-support">Talk to Artisan AI — it finds an open slot and locks it for you.</p>
-        <div class="hero-actions">
-          <a class="btn btn-ai" href="#book">Book with AI</a>
+        <p class="hero-brand" data-hero-item>Artisan Dental</p>
+        <h1 class="hero-line" data-hero-item>Waterdown family dentistry without the wait-and-wonder.</h1>
+        <p class="hero-support" data-hero-item>Open the AI chat on the left — book a real demo slot in under a minute.</p>
+        <div class="hero-actions" data-hero-item>
+          <button type="button" class="btn btn-ai" data-open-ai>Book with AI</button>
           <a class="btn btn-ghost" href="tel:+19056896222">(905) 689-6222</a>
+        </div>
+      </div>
+      <p class="scroll-hint">Scroll</p>
+    </section>
+
+    <section class="explore" id="explore" data-explore-stage>
+      <div class="explore-stage">
+        <div class="explore-pin">
+          <div class="explore-inner">
+            <p class="explore-eyebrow">Interactive clinic tour</p>
+            <h2 class="explore-title">Scroll through real care at Artisan</h2>
+            <div class="explore-frame">
+              <div class="explore-slide is-active" data-explore-slide>
+                <img src="images/gallery/Dental-Cleaning.jpg" alt="Routine cleaning" />
+              </div>
+              <div class="explore-slide" data-explore-slide>
+                <img src="images/gallery/Teeth-Whitening.webp" alt="Teeth whitening" />
+              </div>
+              <div class="explore-slide" data-explore-slide>
+                <img src="images/gallery/Invisalign-Crystallina.jpg" alt="Invisalign" />
+              </div>
+              <div class="explore-slide" data-explore-slide>
+                <img src="images/gallery/Dental-Implants.jpg" alt="Dental implants" />
+              </div>
+              <div class="explore-slide" data-explore-slide>
+                <img src="images/gallery/Veneers.webp" alt="Veneers" />
+              </div>
+              <div class="explore-progress" aria-hidden="true"><span data-explore-progress></span></div>
+            </div>
+            <div class="explore-cap">
+              <div>
+                <h3 data-explore-title>Routine cleaning</h3>
+                <p data-explore-desc>Preventive care that keeps Waterdown smiles healthy — hygiene team, gentle pace.</p>
+              </div>
+              <button type="button" class="btn btn-ai" data-open-ai data-ai-prefill="I'd like a cleaning">Book this</button>
+            </div>
+            <div class="explore-dots" data-explore-dots></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section gallery" id="gallery">
+    <section class="section services" id="services">
       <div class="section-inner">
-        <div class="section-head">
-          <h2>Clinic gallery</h2>
-          <p>IG-style feed from Artisan Dental media + Google Maps. Their site Instagram icon has no link — no public IG handle found — so this pulls real clinic assets instead.</p>
+        <div class="section-head" data-reveal>
+          <h2>Services you can book</h2>
+          <p>New patient or returning — tap a service. AI receptionist opens on the left with that visit ready.</p>
+        </div>
+
+        <p class="svc-tier" data-reveal>Basic &amp; preventive</p>
+        <div class="svc-grid" data-svc-grid>
+          <button type="button" class="svc-card" data-tilt data-ai-prefill="New patient — book a routine oral exam">
+            <h3>Oral exam / consult</h3>
+            <p>Routine exams and consultations.</p>
+            <span class="svc-cta">Book →</span>
+          </button>
+          <button type="button" class="svc-card" data-tilt data-ai-prefill="Book a professional teeth cleaning">
+            <h3>Teeth cleaning</h3>
+            <p>Professional cleanings.</p>
+            <span class="svc-cta">Book →</span>
+          </button>
+          <button type="button" class="svc-card" data-tilt data-ai-prefill="Book diagnostic X-rays">
+            <h3>Diagnostic X-rays</h3>
+            <p>Imaging for diagnosis.</p>
+            <span class="svc-cta">Book →</span>
+          </button>
+          <button type="button" class="svc-card" data-tilt data-ai-prefill="Book fluoride treatment or sealants">
+            <h3>Fluoride / sealants</h3>
+            <p>Protective treatments.</p>
+            <span class="svc-cta">Book →</span>
+          </button>
+          <button type="button" class="svc-card" data-tilt data-ai-prefill="Book dental fillings — composite or amalgam">
+            <h3>Fillings</h3>
+            <p>Composite or amalgam.</p>
+            <span class="svc-cta">Book →</span>
+          </button>
+          <button type="button" class="svc-card" data-tilt data-ai-prefill="Book a simple non-surgical tooth extraction">
+            <h3>Simple extraction</h3>
+            <p>Non-surgical removals.</p>
+            <span class="svc-cta">Book →</span>
+          </button>
+          <button type="button" class="svc-card" data-tilt data-ai-prefill="Book periodontal scaling and root planing — deep cleaning">
+            <h3>Scaling &amp; root planing</h3>
+            <p>Deep cleanings.</p>
+            <span class="svc-cta">Book →</span>
+          </button>
+          <button type="button" class="svc-card" data-tilt data-ai-prefill="Book a root canal">
+            <h3>Root canal</h3>
+            <p>Basic / minor endodontics.</p>
+            <span class="svc-cta">Book →</span>
+          </button>
+        </div>
+
+        <p class="svc-tier" data-reveal>Major care</p>
+        <div class="svc-grid">
+          <button type="button" class="svc-card" data-tilt data-ai-prefill="Book crowns and bridges consult">
+            <h3>Crowns &amp; bridges</h3>
+            <p>Restore damaged teeth.</p>
+            <span class="svc-cta">Book →</span>
+          </button>
+          <button type="button" class="svc-card" data-tilt data-ai-prefill="Book full or partial dentures consult">
+            <h3>Dentures</h3>
+            <p>Full or partial.</p>
+            <span class="svc-cta">Book →</span>
+          </button>
+          <button type="button" class="svc-card" data-tilt data-ai-prefill="Book dental implants consult">
+            <h3>Implants</h3>
+            <p>Replace missing teeth.</p>
+            <span class="svc-cta">Book →</span>
+          </button>
+          <button type="button" class="svc-card" data-tilt data-ai-prefill="Book complex oral surgery consult">
+            <h3>Complex oral surgery</h3>
+            <p>Surgical care consults.</p>
+            <span class="svc-cta">Book →</span>
+          </button>
+          <button type="button" class="svc-card" data-tilt data-ai-prefill="Tooth pain — need an emergency visit">
+            <h3>Pain / emergency</h3>
+            <p>Urgent slots when we can.</p>
+            <span class="svc-cta">Book →</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-inner">
+        <div class="section-head" data-reveal>
+          <h2>Real clinic visuals</h2>
+          <p>Photos from Artisan Dental’s site + Google Maps. (Their Instagram icon has no live link — no public IG handle found.)</p>
         </div>
         <div class="gallery-meta">
           <span class="tag">artisandental.ca</span>
           <span class="tag">Google Maps</span>
-          <span>14 posts · Waterdown</span>
+          <span>14 visuals · Waterdown</span>
         </div>
         <div class="ig-grid" data-ig-grid></div>
-      </div>
-    </section>
-
-    <section class="section" id="care">
-      <div class="section-inner">
-        <div class="section-head">
-          <h2>Care for every stage of your smile</h2>
-          <p>Family, cosmetic, implants — one roof on Dundas in Waterdown. CDCP welcome.</p>
-        </div>
-        <div class="care-grid">
-          <article class="care-item">
-            <h3>Family &amp; preventive</h3>
-            <p>Checkups, cleanings, kids through adults. Direct insurance billing.</p>
-          </article>
-          <article class="care-item">
-            <h3>Cosmetic</h3>
-            <p>Whitening, veneers, Invisalign — planned around your goals.</p>
-          </article>
-          <article class="care-item">
-            <h3>Implants &amp; restorative</h3>
-            <p>Missing or damaged teeth replaced with durable options.</p>
-          </article>
+        <div class="marquee" data-marquee aria-hidden="true">
+          <div class="marquee-track">
+            <span>Family dentist Waterdown</span><span>·</span>
+            <span>Cosmetic dentistry</span><span>·</span>
+            <span>Dental implants</span><span>·</span>
+            <span>Invisalign</span><span>·</span>
+            <span>CDCP welcome</span><span>·</span>
+            <span>Direct insurance billing</span><span>·</span>
+            <span>Emergency dentistry</span><span>·</span>
+            <span>245 Dundas St E</span><span>·</span>
+            <span>Family dentist Waterdown</span><span>·</span>
+            <span>Cosmetic dentistry</span><span>·</span>
+            <span>Dental implants</span><span>·</span>
+            <span>Invisalign</span><span>·</span>
+            <span>CDCP welcome</span><span>·</span>
+            <span>Direct insurance billing</span><span>·</span>
+            <span>Emergency dentistry</span><span>·</span>
+            <span>245 Dundas St E</span><span>·</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section booking" id="book">
-      <div class="section-inner booking-layout">
-        <aside class="booking-aside">
-          <div class="ai-pill"><span class="dot" aria-hidden="true"></span> Artisan AI · online now</div>
-          <h2>Book with the AI assistant</h2>
-          <p>No contact form. Chat what you need — service, day, time, name, phone. Slot locks in this demo instantly.</p>
-          <ul class="booking-meta">
-            <li>
-              <strong>Clinic</strong>
-              <span>245 Dundas St E, Unit 6<br />Waterdown, ON L8B 0E9</span>
-            </li>
-            <li>
-              <strong>Hours</strong>
-              <span>Mon 9–6 · Tue 9:30–6 · Wed 9:30–4<br />Thu–Fri 9:30–1:30</span>
-            </li>
-            <li>
-              <strong>Phone</strong>
-              <a href="tel:+19056896222">(905) 689-6222</a>
-            </li>
-          </ul>
-          <div class="bookings-panel">
-            <h4>Your demo bookings</h4>
-            <div data-bookings-list></div>
+    <section class="section" id="visit">
+      <div class="visit-inner">
+        <div class="visit-copy" data-reveal>
+          <h2>Calm care on Dundas in Waterdown</h2>
+          <p>245 Dundas St E, Unit 6 · Mon–Fri hours · (905) 689-6222 · info@artisandental.ca</p>
+          <button type="button" class="btn btn-ink" data-open-ai>Ask AI to book a visit</button>
+          <div class="trust">
+            <div><strong>4.8</strong><span>Google rating</span></div>
+            <div><strong>1985</strong><span>Community clinic roots</span></div>
+            <div><strong>AI</strong><span>Automated booking demo</span></div>
           </div>
-        </aside>
-
-        <div class="ai-shell" id="ai-booking" data-ai-root>
-          <div class="ai-top">
-            <div class="ai-avatar" aria-hidden="true">AI</div>
-            <div>
-              <h3>Artisan AI Concierge</h3>
-              <p>Checks availability · confirms · calendar file</p>
-            </div>
-          </div>
-          <div class="ai-log" data-ai-log role="log" aria-live="polite"></div>
-          <form class="ai-compose" data-ai-form>
-            <label class="skip" for="ai-input">Message</label>
-            <input id="ai-input" data-ai-input type="text" placeholder="e.g. cleaning Tuesday morning…" autocomplete="off" />
-            <button type="submit" data-ai-send>Send</button>
-          </form>
-          <p class="ai-footer-note">Demo storage on this device · Wire to Jane / Curve / Open Dental next</p>
+        </div>
+        <div class="visit-photo" data-reveal>
+          <img src="images/gallery/Waterdown-Dentist.jpg" alt="Waterdown dentist care" width="1200" height="900" loading="lazy" />
         </div>
       </div>
     </section>
@@ -130,19 +261,38 @@
     <div class="footer-inner">
       <div>
         <p class="footer-brand">Artisan Dental</p>
-        <p>245 Dundas St E, Unit 6 · Waterdown, ON<br />info@artisandental.ca · (905) 689-6222</p>
+        <p>245 Dundas St E, Unit 6 · Waterdown, ON L8B 0E9<br />info@artisandental.ca · (905) 689-6222</p>
       </div>
       <nav class="footer-links" aria-label="Footer">
-        <a href="#book">AI Book</a>
-        <a href="book.html">Booking page</a>
+        <button type="button" data-open-ai>AI Book</button>
         <a href="#gallery">Gallery</a>
-        <a href="https://artisandental.ca/" rel="noopener">Live site</a>
+        <a href="#services">Services</a>
+        <a href="https://artisandental.ca/" rel="noopener">Current site</a>
       </nav>
     </div>
-    <p class="footer-credit">Uptisement demo for Artisan Dental · GSAP motion · Client-side AI booking engine</p>
+    <p class="footer-credit">Uptisement demo · Lenis + GSAP scroll · OpenRouter free AI · SEO LocalBusiness schema</p>
   </footer>
 
-  <a class="ai-fab" href="#book" aria-label="Open AI booking">✦ <span>Book with AI</span></a>
+  <!-- Left AI popup -->
+  <div class="ai-dock-backdrop" data-ai-backdrop></div>
+  <aside class="ai-dock" id="ai-dock" data-ai-dock aria-label="AI booking chat" aria-hidden="true">
+    <div class="ai-dock-top">
+      <div class="ai-avatar" aria-hidden="true">AI</div>
+      <div class="grow">
+        <h3>Artisan AI</h3>
+        <p>Books real demo slots · OpenRouter free</p>
+      </div>
+      <button type="button" class="ai-close" data-close-ai aria-label="Close chat">×</button>
+    </div>
+    <div class="ai-log" data-ai-log role="log" aria-live="polite"></div>
+    <form class="ai-compose" data-ai-form>
+      <label class="skip" for="ai-input">Message Artisan AI</label>
+      <input id="ai-input" data-ai-input type="text" placeholder="Cleaning Tuesday morning…" autocomplete="off" />
+      <button type="submit" data-ai-send>Send</button>
+    </form>
+    <p class="ai-dock-note">Automated booking · confirmation ID · cancel anytime in chat</p>
+  </aside>
+  <button type="button" class="ai-launcher" data-open-ai aria-controls="ai-dock">✦ <span class="label">Book with AI</span></button>
 
   <div class="lightbox" data-lightbox aria-hidden="true" role="dialog" aria-label="Photo">
     <button type="button" class="lightbox-close" data-lightbox-close aria-label="Close">×</button>
@@ -152,14 +302,12 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-  <script src="js/ai-booking.js"></script>
   <script src="js/gallery.js"></script>
   <script src="js/motion.js"></script>
-  <script>
-    ArtisanAIBooking.mount(document.querySelector("[data-ai-root]"));
-  </script>
+  <script src="js/ai-chat.js"></script>
 </body>
 </html>

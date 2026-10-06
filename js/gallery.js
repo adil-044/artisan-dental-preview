@@ -17,13 +17,11 @@
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
   }
-
   function closeLb() {
     if (!lightbox) return;
     lightbox.classList.remove("open");
     lightbox.setAttribute("aria-hidden", "true");
   }
-
   if (lbClose) lbClose.addEventListener("click", closeLb);
   if (lightbox) {
     lightbox.addEventListener("click", function (e) {
@@ -40,11 +38,10 @@
     })
     .then(function (items) {
       grid.innerHTML = "";
-      items.forEach(function (item, i) {
+      items.forEach(function (item) {
         var btn = document.createElement("button");
         btn.type = "button";
         btn.className = "ig-cell";
-        btn.style.setProperty("--i", String(i));
         btn.setAttribute("aria-label", item.caption || "Gallery photo");
         var src = "images/gallery/" + item.file;
         btn.innerHTML =
@@ -63,18 +60,14 @@
       });
 
       if (window.gsap && window.ScrollTrigger) {
-        gsap.registerPlugin(ScrollTrigger);
         gsap.from(".ig-cell", {
           opacity: 0,
-          y: 28,
-          scale: 0.96,
-          duration: 0.55,
-          stagger: 0.045,
+          y: 24,
+          scale: 0.97,
+          duration: 0.5,
+          stagger: 0.04,
           ease: "power3.out",
-          scrollTrigger: {
-            trigger: grid,
-            start: "top 85%",
-          },
+          scrollTrigger: { trigger: grid, start: "top 85%" },
         });
       }
     })

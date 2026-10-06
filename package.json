@@ -1,0 +1,15 @@
+{
+  "name": "artisan-dental-preview",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Artisan Dental Waterdown demo — AI booking popup + GSAP site",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "tunnel": "cloudflared tunnel --url http://127.0.0.1:8790"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  }
+}
